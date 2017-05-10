@@ -1,5 +1,6 @@
 appdirs==1.4.3
 branca==0.2.0
+dj-database-url==0.4.2
 Django==1.11
 folium==0.3.0
 gunicorn==19.7.1
