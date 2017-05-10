@@ -6,8 +6,10 @@ program by the US Mint
 to view the deployed application visit the website
 https://thawing-bayou-44168.herokuapp.com/
 
-It uses static file images, and text files to provide information to users\n
-The application uses a postgres database and whitenoise to manage static files\n
+It uses static file images, and text files to provide information to users
+
+The application uses a postgres database and whitenoise to manage static files
+
 It is deployed on Heroku
 
 Coin collection page
