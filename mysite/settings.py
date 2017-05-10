@@ -26,7 +26,7 @@ SECRET_KEY = '%ose1y%2y93&$#3i73(z_gl$sgv3*)g1nicr7#k&he*zj7(%g2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'thawing-bayou-44168.herokuapp.com', 'localhost']
 
 
 # Application definition
