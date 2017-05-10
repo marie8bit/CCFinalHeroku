@@ -8,7 +8,7 @@ https://thawing-bayou-44168.herokuapp.com/
 
 It uses static file images, and text files to provide information to users
 The application uses a postgres database and whitenoise to manage static files
-
+It is deployed 
 
 Coin collection page
 
@@ -19,3 +19,6 @@ Coins detail
 
 ![image](https://cloud.githubusercontent.com/assets/22032833/25921410/e028a6f6-359a-11e7-9f86-5b1ee1cecb9c.png)
 ![image](https://cloud.githubusercontent.com/assets/22032833/25921425/f29069f0-359a-11e7-8f6d-77162459d2f7.png)
+
+Coin wishlist page
+![image](https://cloud.githubusercontent.com/assets/22032833/25922688/b9cdc04a-359f-11e7-8baf-0b1b1e21aa1e.png)
