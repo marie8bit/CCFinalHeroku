@@ -26,7 +26,7 @@ class UserRegistrationForm(UserCreationForm):
 
     def clean_username(self):
 
-        usernameIn = self.cleaned_data['username']
+        username = self.cleaned_data['username']
         #username = usernameIn.lower()
 
         if not username:
