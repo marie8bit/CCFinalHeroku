@@ -1,0 +1,30 @@
+{% load static %}
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/sc50.css' %}" />
+
+</head>
+<body >
+
+<div  id= "page-header">
+
+  {% if user.is_authenticated %}
+
+  <span><h1><a href="{% url 'coin_collector' user_pk=user.pk %}" >50 US State Coins Collection</a><small>(<a href="{% url 'collection_wishlist' user_pk=user.pk %}" >Collection wishlist</a>)</small>
+    <p class= "top-menu">Hello {{ user.username }}<br/><small>(<a href="{% url 'logout' %}">Log out</a>)(<a href = "{%url 'homepage'%}">Home</a>)</small></p></h1></span>
+  {% else %}
+      <a href="{% url 'login' %}" >Login here</a>
+      <a href="{% url 'register' %}" >Register here</a>
+  {% endif %}
+</div>
+
+<div >
+
+  {% block content %}
+  {% endblock %}
+</div>
+<div id = "page-header">
+</div>
+
+</body>
+
+<html>

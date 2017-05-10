@@ -1,0 +1,42 @@
+{% extends 'statecoin50/base.html' %}
+{% load static %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'css/sc50.css' %}" />
+
+{% block content %}
+<div id = "row-detail" >
+  <div class = "col-sm-6" style="width:700">
+  <form method ="POST" action ="" >
+  <div class = coin-detail>
+  {% csrf_token %}
+  {{form.errors}}
+  <h1>{{coin.state}} Statehood Coin</h1>
+  {% if coin.owned %}
+    <h2>Date obtained:{{coin.dateOwned}}</h2>
+  {% else %}
+    <button type="submit">Collected!</button>
+  {% endif %}
+  <br><br>
+  <img src="{% static coin.stImg %}" >
+  </div>
+  </form>
+</div>
+<div class= "col-sm-8" style="width:700; height:800">
+
+  {% include 'statecoin50/state_map.html' %}
+
+</div>
+</div>
+
+<div></div>
+<section class = "row-info">
+<div style= "background-color:#41ab5d">
+  <h2 style="word-wrap:break-word;" >{{coin.dates}}</h2>
+  <h2 style="word-wrap:break-word; ">{{coin.details}}</h2>
+</div>
+
+{% endblock %}

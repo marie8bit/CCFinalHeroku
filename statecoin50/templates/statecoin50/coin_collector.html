@@ -1,0 +1,42 @@
+{% extends 'statecoin50/base.html' %}
+{% load static %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'css/sc50.css' %}" />
+{% block content %}
+
+<div class = "row" >
+
+<div class = "col-sm-4"  id = col-scroll >
+  <h2 ><b> {{message}}</b></h2>
+  <p> Click a coin to add it to your collection </p>
+
+
+{% for coin in coins %}
+<div class = coin>
+<li><a href = "{% url 'coindetail' coin_pk=coin.pk %}" >{{coin.state}}</a></li>
+<a href = "{% url 'coindetail' coin_pk=coin.pk %}" ><img src="{% static coin.stImg %}" ></a>
+{% if coin.owned %}
+<p>Collected:{{coin.dateOwned}}</p>
+{% else %}
+<p> Not Owned </p>
+{% endif %}
+</div>
+{% empty %}
+
+<p>No coins in the database, try clicking on the 50 US State Coins Collection link</p>
+
+{% endfor %}
+
+</div>
+<div class= "col-sm-8" style="width:700">
+
+  {% include 'statecoin50/map_coins.html' %}
+
+</div>
+</div>
+</div>
+{% endblock %}

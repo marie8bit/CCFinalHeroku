@@ -1,0 +1,19 @@
+{% extends 'statecoin50/base.html' %}
+{% load static %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'css/sc50.css' %}" />
+{% block content %}
+
+<p>Welcome to the 50 state quarter Coin Collector Website</p>
+{% if user.is_authenticated %}
+<p>Click on the 50 US State Coins Collection link to view your collection</p>
+{%else%}
+<p> Log in to your account or register your collection</p>
+{%endif%}
+<p>There are {{userCount}} users of this app</p>
+<p>They have collected {{coinCount}} coins</p>
+{% endblock %}

@@ -1,0 +1,92 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+body {
+  color: #d9f0a3 ;
+  padding-left: 15px;
+}
+
+#page-header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  background-color: #ff9400;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 20px 20px 20px 40px;
+}
+.page-footer {
+  background-color: #ff9400;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 40px;
+}
+.row{
+  margin-top: 0;
+  background-color:#41ab5d;
+  height:600px;
+  margin-left: 20px;
+  padding: 20px 20px 20px 40px;
+
+}
+#row-detail{
+  background-color:#41ab5d;
+  height:850;
+  width: 100%;
+  margin-left: 0px;
+  padding: 20px 20px 20px 40px;
+}
+.row-info{
+
+  height:500px;
+  margin-left: 0px;
+  padding: 20px 20px 20px 40px;
+  float: left;
+}
+#col-scroll{
+  overflow: auto;
+  column-fill: balance;
+  height: 565px;
+  width: 500px;
+
+}
+#col-scroll h1 a{
+  font-size: 26px;
+  color:#ff9400;
+
+}
+#output h2 b {
+  font-size: 16px;
+  color:#ff9400
+}
+h2 a {
+  font-size: 26px;
+  color:#ff9400;
+}
+h1 a {
+  color: #d9f0a3;
+  font-size: 26px;
+}
+
+.coin li a{
+  font-size: 26px;
+  color: black;
+}
+/*https://www.abeautifulsite.net/how-to-make-rounded-images-with-css*/
+.coin img{
+  height :200;
+  width :200;
+  border-radius: 50%;
+}
+.top-menu {
+    color: black;
+    float: right;
+    font-size: 20pt;
+    margin-right: 20px;
+}
+
+.coin-detail img{
+  height :500;
+  width :500;
+  border-radius: 50%;
+}
