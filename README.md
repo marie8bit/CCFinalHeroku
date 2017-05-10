@@ -1,18 +1,21 @@
-"# CoinCollectorP5" 
+"50 State Coin Collection" 
 
-To set up the application in command line type
+This app allows you to track your coins collect of the 50 state quarters 
+program by the US Mint
 
-python setup.py install
+to view the deployed application visit the website
+https://thawing-bayou-44168.herokuapp.com/
 
-The application uses urls to display images.
-It uses Folium to generate a map of the US with 50 states shapes that fill depending on
-whether the user has collected an corresponding coin.
+It uses static file images, and text files to provide information to users
+The application uses a postgres database and whitenoise to manage static files
 
-Home page
 
-![image](https://cloud.githubusercontent.com/assets/22032833/25312123/e2ac7668-27d6-11e7-8ca4-27bdd37f137b.png)
+Coin collection page
+
+![image](https://cloud.githubusercontent.com/assets/22032833/25921373/c4271636-359a-11e7-9adc-01e91ba61870.png)
 
 
 Coins detail
 
-![image](https://cloud.githubusercontent.com/assets/22032833/25312131/fa23a38e-27d6-11e7-8537-d6af44b9402a.png)
+![image](https://cloud.githubusercontent.com/assets/22032833/25921410/e028a6f6-359a-11e7-9f86-5b1ee1cecb9c.png)
+![image](https://cloud.githubusercontent.com/assets/22032833/25921425/f29069f0-359a-11e7-8f6d-77162459d2f7.png)
